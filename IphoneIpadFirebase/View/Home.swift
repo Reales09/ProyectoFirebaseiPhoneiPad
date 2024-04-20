@@ -15,6 +15,21 @@ struct Home: View {
             VStack{
                 NavBar(index: $index
                        , menu: $menu)
+                ZStack{
+                    if index == "Playstation"{
+                        VStack{
+                            Color.blue
+                        }
+                    }else if index == "Xbox"{
+                        VStack{
+                            Color.green
+                        }
+                    }else{
+                        VStack{
+                            Color.red
+                        }
+                    }
+                }
             }
         }
     }

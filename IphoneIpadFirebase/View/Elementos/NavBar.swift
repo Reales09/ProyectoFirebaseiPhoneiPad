@@ -43,8 +43,10 @@ struct NavBar: View {
                 }
             }
             
-        }.padding()
-            .background(Color.purple)
+        }
+        .padding(.top, 30)
+        .padding()
+        .background(Color.purple)
     }
 }
 
