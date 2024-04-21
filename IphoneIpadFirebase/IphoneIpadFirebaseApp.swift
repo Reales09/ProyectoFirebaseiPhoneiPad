@@ -11,7 +11,8 @@ import SwiftUI
 struct IphoneIpadFirebaseApp: App {
     var body: some Scene {
         WindowGroup {
-            Home()
+            Home().edgesIgnoringSafeArea(.all)
+                .preferredColorScheme(.dark)
         }
     }
 }
