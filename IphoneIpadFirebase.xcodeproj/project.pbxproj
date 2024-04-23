@@ -44,6 +44,7 @@
 		B736FC6E2BD7745000FB4C4B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B736FC6D2BD7745000FB4C4B /* FirebaseStorage */; };
 		B736FC702BD7745000FB4C4B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B736FC6F2BD7745000FB4C4B /* FirebaseStorageCombine-Community */; };
 		B736FC722BD7750F00FB4C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736FC712BD7750F00FB4C4B /* AppDelegate.swift */; };
+		B736FC752BD864C700FB4C4B /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736FC742BD864C700FB4C4B /* FirebaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		B736FC362BD23F8D00FB4C4B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B736FC382BD770CB00FB4C4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B736FC712BD7750F00FB4C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B736FC742BD864C700FB4C4B /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 		B736FC1F2BD23EEA00FB4C4B /* IphoneIpadFirebase */ = {
 			isa = PBXGroup;
 			children = (
+				B736FC732BD8649700FB4C4B /* ViewModel */,
 				B736FC382BD770CB00FB4C4B /* GoogleService-Info.plist */,
 				B736FC2E2BD23F1900FB4C4B /* View */,
 				B736FC202BD23EEA00FB4C4B /* IphoneIpadFirebaseApp.swift */,
@@ -153,6 +156,14 @@
 				B736FC362BD23F8D00FB4C4B /* ButtonView.swift */,
 			);
 			path = Elementos;
+			sourceTree = "<group>";
+		};
+		B736FC732BD8649700FB4C4B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B736FC742BD864C700FB4C4B /* FirebaseViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 				B736FC722BD7750F00FB4C4B /* AppDelegate.swift in Sources */,
 				B736FC212BD23EEA00FB4C4B /* IphoneIpadFirebaseApp.swift in Sources */,
 				B736FC352BD23F7D00FB4C4B /* CardView.swift in Sources */,
+				B736FC752BD864C700FB4C4B /* FirebaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
