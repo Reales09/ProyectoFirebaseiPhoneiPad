@@ -21,6 +21,7 @@ class FirebaseViewModel: ObservableObject {
                     print("Error en firebase", error)
                 }else{
                     print("Error en la app")
+                    
                 }
             }
         }
