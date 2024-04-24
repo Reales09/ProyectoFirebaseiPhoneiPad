@@ -45,6 +45,7 @@
 		B736FC702BD7745000FB4C4B /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B736FC6F2BD7745000FB4C4B /* FirebaseStorageCombine-Community */; };
 		B736FC722BD7750F00FB4C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736FC712BD7750F00FB4C4B /* AppDelegate.swift */; };
 		B736FC752BD864C700FB4C4B /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736FC742BD864C700FB4C4B /* FirebaseViewModel.swift */; };
+		B736FC772BD8CB8800FB4C4B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736FC762BD8CB8800FB4C4B /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		B736FC382BD770CB00FB4C4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B736FC712BD7750F00FB4C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B736FC742BD864C700FB4C4B /* FirebaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseViewModel.swift; sourceTree = "<group>"; };
+		B736FC762BD8CB8800FB4C4B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				B736FC302BD23F4200FB4C4B /* Home.swift */,
 				B736FC2F2BD23F2500FB4C4B /* Elementos */,
+				B736FC762BD8CB8800FB4C4B /* Login.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				B736FC332BD23F6800FB4C4B /* NavBar.swift in Sources */,
 				B736FC722BD7750F00FB4C4B /* AppDelegate.swift in Sources */,
 				B736FC212BD23EEA00FB4C4B /* IphoneIpadFirebaseApp.swift in Sources */,
+				B736FC772BD8CB8800FB4C4B /* Login.swift in Sources */,
 				B736FC352BD23F7D00FB4C4B /* CardView.swift in Sources */,
 				B736FC752BD864C700FB4C4B /* FirebaseViewModel.swift in Sources */,
 			);
