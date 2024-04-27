@@ -50,6 +50,25 @@ struct Login: View {
                     Capsule()
                         .stroke(Color.white)
                 )
+                Divider()
+                Button(action:{
+                    login.createUser(email: email, pass: password, completion: { (done) in
+                        if done{
+                            UserDefaults.standard.set(true, forKey: "sesion")
+                            loginShow.show.toggle()
+                        }
+                    })
+                }){
+                    Text("Registrarse")
+                        .font(.title)
+                        .frame(width: 200)
+                        .foregroundColor(.white)
+                        .padding(.vertical, 10)
+                }.background(
+                    Capsule()
+                        .stroke(Color.white)
+                )
+
             }.padding(.all)
         }
     }
