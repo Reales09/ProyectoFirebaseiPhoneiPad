@@ -15,7 +15,6 @@ struct IphoneIpadFirebaseApp: App {
     var body: some Scene {
         let login = FirebaseViewModel()
         WindowGroup {
-            
             ContentView().environmentObject(login)
 //            Home().edgesIgnoringSafeArea(.all)
 //                .preferredColorScheme(.dark)
