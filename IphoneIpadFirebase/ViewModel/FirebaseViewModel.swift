@@ -42,4 +42,27 @@ class FirebaseViewModel: ObservableObject {
             }
         }
     }
+    /// BASE DE DATOS
+    
+    
+    /// GUARDAR
+
+    func save(titulo: String, desc: String, plataforma:String, portada: String, completion: @escaping(_ done: Bool) -> Void){
+        
+        let db = Firestore.firestore()
+        let id = UUID().uuidString
+        
+        guard let idUser = Auth.auth().currentUser?.uid else { return }
+        guard let email = Auth.auth().currentUser?.email else { return }
+        
+        let campos : [String: Any] = ["titulo": titulo, "desc":desc, "portada":portada, "idUser":idUser,"email":email]
+        db.collection(plataforma).document(id).setData(campos){error in
+            if let error = error?.localizedDescription{
+                print("Error al guardar en firestore")
+            }else{
+                print("Guardo todo")
+                completion(true)
+            }
+        }
+    }
 }
