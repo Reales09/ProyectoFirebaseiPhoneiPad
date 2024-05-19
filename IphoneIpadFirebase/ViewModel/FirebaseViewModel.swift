@@ -11,6 +11,7 @@ import FirebaseStorage
 
 class FirebaseViewModel: ObservableObject {
     @Published var show = false
+    @Published var datos = [FirebaseModel]()
     
     func login(email: String, pass: String, completion: @escaping (_ done: Bool) -> Void){
         Auth.auth().signIn(withEmail: email, password: pass){ (user, error) in
@@ -82,6 +83,36 @@ class FirebaseViewModel: ObservableObject {
                     print("fallo la app")
                 }
             }
+        }
+        
+    }
+    
+    // Mostrar
+    
+    func getData(plataforma: String){
+        let db = Firestore.firestore()
+        db.collection(plataforma).addSnapshotListener{ (QuerySnapshot, error) in
+            if let error = error?.localizedDescription{
+                print("error al mostrar datos ", error)
+            }else{
+                self.datos.removeAll()
+                for document in QuerySnapshot!.documents{
+                    let valor = document.data()
+                    let id = document.documentID
+                    let titulo = valor["titulo"]as? String ?? "sin titulo"
+                    let descripcion = valor["desc"]as? String ?? "sin desc"
+                    let portada = valor["portada"]as? String ?? "sin portada"
+                    
+                    DispatchQueue.main.async {
+                        let registros = FirebaseModel(id: id, titulo: titulo, desc: descripcion, portada: portada)
+                        self.datos.append(registros)
+                    }
+
+
+                }
+            }
+                
+            
         }
         
     }
