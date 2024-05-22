@@ -11,12 +11,7 @@ struct Home: View {
     @State private var index = "Playstation"
     @State private var menu = false
     @State private var widthMenu = UIScreen.main.bounds.width
-    var device = UIDevice.current.userInterfaceIdiom
-    @Environment(\.horizontalSizeClass) var widthPhone
-    
-    func getColumns() -> Int{
-        return (device == .pad) ? 3 : ((device == .phone && widthPhone == .regular) ? 3 : 1)
-    }
+  
     
     var body: some View {
         ZStack{
@@ -25,23 +20,14 @@ struct Home: View {
                        , menu: $menu)
                 ZStack{
                     if index == "Playstation"{
-                        ScrollView(.vertical,showsIndicators: false) {
-                            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: getColumns()), spacing: 20){
-                                ForEach(1...9, id:\.self){_ in
-                                    CardView()
-                                        .padding(.all)
-                                }
-                                
-                            }
-                        }
+                        ListView(plataforma: "Playstation")
+                        
                     }else if index == "Xbox"{
-                        VStack{
-                            Color.green
-                        }
+                        ListView(plataforma: "Xbox")
+
                     }else if index == "Nintendo"{
-                        VStack{
-                            Color.red
-                        }
+                        ListView(plataforma: "Nintendo")
+
                     }else{
                         AddView()
                     }

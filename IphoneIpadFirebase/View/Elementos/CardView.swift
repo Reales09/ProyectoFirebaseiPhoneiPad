@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct CardView: View {
+    var titulo: String
+    var portada: String
     var body: some View {
         VStack(spacing: 20){
-            Image("darksouls")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-            Text("Dark souls")
+            ImagenFirebase(imageUrl: portada)
+            Text(titulo)
                 .font(.title)
                 .bold()
                 .foregroundColor(.black)
@@ -21,8 +21,4 @@ struct CardView: View {
             .background(Color.white)
             .cornerRadius(20)
     }
-}
-
-#Preview {
-    CardView()
 }

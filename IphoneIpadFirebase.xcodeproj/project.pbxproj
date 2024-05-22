@@ -10,6 +10,9 @@
 		B7084E212BE0AE3B001AC448 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7084E202BE0AE3B001AC448 /* AddView.swift */; };
 		B7184B042BE4BE9B00607456 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7184B032BE4BE9B00607456 /* ImagePicker.swift */; };
 		B7184B082BF9097B00607456 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7184B072BF9097B00607456 /* FirebaseModel.swift */; };
+		B7184B0A2BFB27D500607456 /* PortadaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7184B092BFB27D500607456 /* PortadaViewModel.swift */; };
+		B7184B0C2BFB29CF00607456 /* ImagenFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7184B0B2BFB29CF00607456 /* ImagenFirebase.swift */; };
+		B7184B0E2BFB2BF000607456 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7184B0D2BFB2BF000607456 /* ListView.swift */; };
 		B736FC212BD23EEA00FB4C4B /* IphoneIpadFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736FC202BD23EEA00FB4C4B /* IphoneIpadFirebaseApp.swift */; };
 		B736FC232BD23EEA00FB4C4B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B736FC222BD23EEA00FB4C4B /* ContentView.swift */; };
 		B736FC252BD23EEE00FB4C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B736FC242BD23EEE00FB4C4B /* Assets.xcassets */; };
@@ -55,6 +58,9 @@
 		B7084E202BE0AE3B001AC448 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		B7184B032BE4BE9B00607456 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		B7184B072BF9097B00607456 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
+		B7184B092BFB27D500607456 /* PortadaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortadaViewModel.swift; sourceTree = "<group>"; };
+		B7184B0B2BFB29CF00607456 /* ImagenFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenFirebase.swift; sourceTree = "<group>"; };
+		B7184B0D2BFB2BF000607456 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		B736FC1D2BD23EEA00FB4C4B /* IphoneIpadFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IphoneIpadFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B736FC202BD23EEA00FB4C4B /* IphoneIpadFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneIpadFirebaseApp.swift; sourceTree = "<group>"; };
 		B736FC222BD23EEA00FB4C4B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +180,8 @@
 				B736FC342BD23F7D00FB4C4B /* CardView.swift */,
 				B736FC362BD23F8D00FB4C4B /* ButtonView.swift */,
 				B7184B032BE4BE9B00607456 /* ImagePicker.swift */,
+				B7184B0B2BFB29CF00607456 /* ImagenFirebase.swift */,
+				B7184B0D2BFB2BF000607456 /* ListView.swift */,
 			);
 			path = Elementos;
 			sourceTree = "<group>";
@@ -182,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				B736FC742BD864C700FB4C4B /* FirebaseViewModel.swift */,
+				B7184B092BFB27D500607456 /* PortadaViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -291,12 +300,15 @@
 			files = (
 				B7184B082BF9097B00607456 /* FirebaseModel.swift in Sources */,
 				B736FC232BD23EEA00FB4C4B /* ContentView.swift in Sources */,
+				B7184B0E2BFB2BF000607456 /* ListView.swift in Sources */,
 				B736FC312BD23F4200FB4C4B /* Home.swift in Sources */,
 				B7084E212BE0AE3B001AC448 /* AddView.swift in Sources */,
 				B736FC372BD23F8D00FB4C4B /* ButtonView.swift in Sources */,
+				B7184B0A2BFB27D500607456 /* PortadaViewModel.swift in Sources */,
 				B736FC332BD23F6800FB4C4B /* NavBar.swift in Sources */,
 				B736FC722BD7750F00FB4C4B /* AppDelegate.swift in Sources */,
 				B736FC212BD23EEA00FB4C4B /* IphoneIpadFirebaseApp.swift in Sources */,
+				B7184B0C2BFB29CF00607456 /* ImagenFirebase.swift in Sources */,
 				B7184B042BE4BE9B00607456 /* ImagePicker.swift in Sources */,
 				B736FC772BD8CB8800FB4C4B /* Login.swift in Sources */,
 				B736FC352BD23F7D00FB4C4B /* CardView.swift in Sources */,
