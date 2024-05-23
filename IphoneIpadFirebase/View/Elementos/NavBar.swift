@@ -48,6 +48,14 @@ struct NavBar: View {
             }else{
                 // Menu iPhone
                 Button(action:{
+                    index = "Agregar"
+                }){
+                    Image(systemName: "plus")
+                        .font(.system(size: 26))
+                        .foregroundColor(.white)
+                }
+                
+                Button(action:{
                     withAnimation{
                         menu.toggle()
                     }
